@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import './header.css';
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
-import Sidebar from '../sidebar/sidebar';
+import Sidebar from '../sidebar/Sidebar';
 
 const Navbar = () => {
   // State to manage sidebar visibility
