@@ -7,7 +7,6 @@ import Service from "@/components/services/service";
 import Whatsapp from "@/components/whatsapp/Whatsapp";
 import WhyUs from "@/components/whyus/WhyUs";
 import Image from "next/image";
-// import styles from "./page.module.css";
 
 export default function Home() {
   return (
