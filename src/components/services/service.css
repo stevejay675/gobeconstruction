@@ -1,0 +1,76 @@
+/* General Styles */
+
+/* Service Section Styles */
+.service-section {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .section-header {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #2c3e50;
+    position: relative;
+    display: inline-block; /* Ensures proper alignment for pseudo-element */
+  }
+  
+  .section-header::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px; /* Adjust spacing below the text */
+    width: 50%; /* Half underline */
+    height: 6px; /* Thickness of the underline */
+    background-color: var(--ac); /* Decorative line color */
+    border-radius: 2px; /* Slight rounding for a polished look */
+  }
+  
+  
+  /* Service Grid Styles */
+  .service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Service Card Styles */
+  .service-card {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .service-card:hover {
+    box-shadow: 0 3px 6px var(--ac);
+  }
+  
+  .service-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #e0e0e0;
+  }
+  
+  .service-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  .service-description {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+  }
+  

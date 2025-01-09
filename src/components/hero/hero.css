@@ -1,0 +1,112 @@
+.hero-section{
+    width: 100%;
+    position: relative;
+    height: 550px;
+}
+
+.hero-section img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-content{
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 100;
+    color: #fff;
+    text-align: center;
+}
+
+.hero-content h1{
+    font-size: clamp(.8rem, 6vw, 2rem);
+}
+
+.hero-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.hero-cta{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+
+.hero-cta {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .hero-cta a {
+    padding: 8px 30px;
+    color: #fff;
+    border-radius: 30px;
+    font-weight: 400;
+    font-size: 1rem;
+    text-align: center;
+    white-space: nowrap;
+  }
+  
+  .shop-btn {
+    background-color: var(--p);
+    border: 1px solid var(--p-d);
+    transition: 0.4s;
+  }
+  
+  .shop-btn:hover {
+    background-color: var(--p-d);
+  }
+  
+  .service-btn {
+    border: 1px solid #fff;
+  }
+  
+ 
+  
+
+
+.hero-swiper .swiper-pagination span{
+    background-color: var(--ac);
+    width: 12px;
+    height: 12px;
+  }
+
+  .hero-swiper .swiper-pagination span.swiper-pagination-bullet-active{
+    width: 15px;
+    height: 15px;
+  }
+
+  .hero-swiper .swiper-pagination {
+    position: absolute;
+    bottom: 80px;
+  }
+
+  .hero-content h1 {
+    font-size: clamp(1.5rem, 4vw, 3rem);
+  }
+
+
+@media screen and (max-width: 700px) {
+    .hero-section{
+        height: 65vh;
+    }
+}

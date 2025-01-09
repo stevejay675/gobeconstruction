@@ -1,0 +1,85 @@
+/* Why Us Section */
+.why-us-section {
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  
+  
+  /* Why Us Content Container */
+  .why-us-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 25px;
+  }
+  
+  /* Image Section */
+  .why-us-image {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .responsive-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  /* Reasons Section */
+  .why-us-reasons {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .reasons-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .reason-card {
+    text-align: left;
+    padding: 10px;
+  }
+  
+  .reason-icon {
+    font-size: 2rem;
+    color: var(--p);
+    margin-bottom: 10px;
+  }
+  
+  .reason-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .reason-text {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .why-us-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .why-us-reasons {
+      text-align: center;
+    }
+  
+    .reason-card {
+      text-align: center;
+    }
+  }
+  

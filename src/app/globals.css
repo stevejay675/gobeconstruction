@@ -1,0 +1,54 @@
+:root {
+  --p: #0072C6;
+  --p-d: hsl(205, 100%, 34%);
+  --ac: #FF5733;
+  --ac-d: hsl(11, 100%, 55%);
+  --bg: #F4F4F4;
+  --tx: #2C3E50;
+  --wh: #FFFFFF;
+}
+
+.App{
+  max-width: 1440px;
+  margin: 0 auto;
+  
+}
+
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --background: red;
+    --foreground: #ededed;
+  }
+} */
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: var(--tx);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* @media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+} */

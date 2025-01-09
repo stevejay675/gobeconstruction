@@ -1,0 +1,93 @@
+/* Banner Section */
+.banner {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  /* Background Image */
+  .banner-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Overlay */
+  .overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.6); /* Dark overlay for better contrast */
+    z-index: 1;
+  }
+  
+  /* Content Container */
+  .banner-content-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the container */
+    z-index: 2; /* Ensure it appears above the overlay */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    color: #fff;
+    text-align: center;
+    gap: 20px;
+  }
+  
+  /* Individual Stat Cards */
+  .banner-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    animation: fadeInUp 0.8s ease-in-out;
+  }
+  
+  .banner-content h3 {
+    font-size: 4rem;
+    font-weight: bold;
+    color: var(--ac);
+    text-shadow: 0 0 2px white;
+  }
+  
+  .banner-content span {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #f0f0f0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .banner {
+      height: 250px;
+    }
+
+  
+    .banner-content h3 {
+      font-size: 1.5rem;
+    }
+  
+    .banner-content span {
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* Animation */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
