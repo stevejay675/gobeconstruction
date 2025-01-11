@@ -5,9 +5,9 @@ import emailjs from 'emailjs-com';
 import { FaCheckCircle, FaTimesCircle, FaSpinner } from 'react-icons/fa';
 import './contact.css';
 
-const SERVICE_ID = "service_r04pers";
-const TEMPLATE_ID = "template_kpk0eqh";
-const PUBLIC_KEY = "U5eOgvjcXRIBBldvn";
+const SERVICE_ID = process.env.NEXT_PUBLIC_SERVICE_ID;
+const TEMPLATE_ID = process.env.NEXT_PUBLIC_TEMPLATE_ID;
+const PUBLIC_KEY = process.env.NEXT_PUBLIC_PUBLIC_KEY;
 
 const ContactForm = () => {
   const [status, setStatus] = useState({ loading: false, success: null });
