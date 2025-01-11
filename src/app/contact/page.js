@@ -9,7 +9,7 @@ const Contact = () => {
     {
       image: '/images/build/build6.jpg',
       header: 'Contact Us',
-      text: 'Lorem ipsum dolor sit amet ipisicing elit. Expedita, magnam?',
+      text: 'We are happy to here from you! Contact us for any inquiries...',
       cta1_text: 'Shop',
       cta1_link: '/electronics',
       cta2_text: 'Contact',

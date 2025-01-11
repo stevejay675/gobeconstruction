@@ -13,10 +13,10 @@ export default function Home() {
       header: 'Building the Future of Construction',
       text: 'Expert builders creating lasting structures for generations.',
       cta_show: true,
-      cta1_link: '#services',
-      cta1_text: 'Our Services',
-      cta2_link: '#projects',
-      cta2_text: 'View Projects'
+      cta1_link: '/contact',
+      cta1_text: 'contact Us',
+      cta2_link: '/about',
+      cta2_text: 'know us'
     },
     {
       
@@ -24,9 +24,9 @@ export default function Home() {
       header: 'Quality and Safety in Every Project',
       text: 'We prioritize safety and high standards in every build.',
       cta_show: true,
-      cta1_link: '#about',
+      cta1_link: '/about',
       cta1_text: 'About Us',
-      cta2_link: '#contact',
+      cta2_link: '/contact',
       cta2_text: 'Get in Touch'
     },
     {
