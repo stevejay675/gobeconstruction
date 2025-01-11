@@ -10,16 +10,20 @@ import './project.css'
 const Projects = () => {
 
     const gallery = [
-        { image: "/images/project1.webp"},
-        { image: "/images/project2.jpg"},
-        { image: "/images/project3.jpg"},
-        { image: "/images/project4.jpg"},
+        { image: "/images/build/build5.jpg"},
+        { image: "/images/build/build11.jpg"},
+        { image: "/images/build/build9.jpg"},
+        { image: "/images/build/build8.jpg"},
+        { image: "/images/build/build7.jpg"},
+        { image: "/images/build/build6.jpg"},
+        { image: "/images/build/build4.jpg"},
+        
       ];
 
 
   return (
     <div className='project-section'>
-      <h2 className='section-header'>Recent Projects</h2>
+      <div className="section-header-container"><h2 className='section-header'>Recent Projects</h2></div>
       
       <Swiper
         modules={[Navigation, Pagination]}

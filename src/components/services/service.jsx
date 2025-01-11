@@ -5,17 +5,17 @@ import './service.css';
 const Service = () => {
   const services = [
     {
-      image: '/images/service1.jpg',
+      image: '/images/service11.jpg',
       title: 'Drawing of Plans',
       description: 'Accurate and detailed architectural plans to bring your vision to life.',
     },
     {
-      image: '/images/service2.jpg',
+      image: '/images/build/build5.jpg',
       title: 'House Construction',
       description: 'Professional construction services from foundation to structure completion.',
     },
     {
-      image: '/images/service3.webp',
+      image: '/images/service3.jpg',
       title: 'Plastering & Finishing',
       description: 'High-quality plastering and finishes, including painting and tiling.',
     },
@@ -27,7 +27,7 @@ const Service = () => {
   ];
 
   return (
-    <div className="service-section">
+    <section className="service-section">
       <h2 className="section-header">Our Services</h2>
       <div className="service-grid">
         {services.map((service, index) => (
@@ -39,7 +39,7 @@ const Service = () => {
           />
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

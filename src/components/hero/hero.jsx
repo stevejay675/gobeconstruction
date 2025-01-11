@@ -9,38 +9,11 @@ import 'swiper/css/autoplay';
 import 'swiper/css/pagination';
 import './hero.css';
 
-const HeroSection = () => {
+const HeroSection = ({ heroData = [] }) => {
   const [activeSlide, setActiveSlide] = useState(0); // Track the current slide index
 
   // Real construction-related data
-  const heroData = [
-    {
-      image: '/images/hero1.webp',
-      header: 'Building the Future of Construction',
-      text: 'Expert builders creating lasting structures for generations.',
-      cta_show: true,
-      cta1_link: '#services',
-      cta1_text: 'Our Services',
-      cta2_link: '#projects',
-      cta2_text: 'View Projects'
-    },
-    {
-      image: '/images/hero2.jpg',
-      header: 'Quality and Safety in Every Project',
-      text: 'We prioritize safety and high standards in every build.',
-      cta_show: true,
-      cta1_link: '#about',
-      cta1_text: 'About Us',
-      cta2_link: '#contact',
-      cta2_text: 'Get in Touch'
-    },
-    {
-      image: '/images/hero3.jpg',
-      header: 'Transforming Spaces with Innovation',
-      text: 'Pushing the boundaries of construction with cutting-edge designs.',
-      cta_show: false
-    }
-  ];
+  
 
   return (
     <div className="hero-swiper">

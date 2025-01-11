@@ -1,111 +1,120 @@
+/* Footer Container */
+.footer {
+  background-color: var(--tx);
+  color: var(--wh);
+  padding: 40px 20px;
+  font-family: 'Arial', sans-serif;
+}
 
-  
-  /* Footer Container */
-  .footer {
-    background-color: var(--bg);
-    color: var(--tx);
-    padding: 40px 20px;
-    font-family: 'Arial', sans-serif;
-  }
-  
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+/* Branding Section */
+.footer-brand {
+  flex: 1 1 250px;
+}
+
+.footer-brand h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.footer-brand p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--bg); /* Ensures good contrast with background */
+}
+
+/* Links Section */
+.footer-links {
+  flex: 1 1 200px;
+}
+
+.footer-links h3 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin: 8px 0;
+}
+
+.footer-links a {
+  color: var(--bg); 
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: var(--ac); /* Accent color on hover */
+}
+
+/* Social Media Section */
+.footer-social {
+  flex: 1 1 200px;
+}
+
+.footer-social h3 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px; /* Ensure equal width */
+  height: 40px; /* Ensure equal height */
+  color: var(--wh); /* White color for social icons */
+  font-size: 1.5rem;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  padding: 0; /* Remove padding */
+  border-radius: 50%; /* Makes the icons perfectly round */
+  background-color: var(--ac); /* Primary color as background */
+}
+
+.social-icons a:hover {
+  background-color: var(--ac-d); 
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  border-top: 1px solid #ddd; /* Light border color for a subtle look */
+  padding-top: 30px;
+  font-size: 0.9rem;
+  color: var(--bg); /* Ensures readability */
+}
+
+.footer-bottom p a{
+  color: var(--ac);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
   .footer-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin: 0 auto;
-    gap: 20px;
+    flex-direction: column;
+    gap: 30px;
   }
-  
-  /* Branding Section */
-  .footer-brand {
-    flex: 1 1 250px;
+
+  .footer-brand, .footer-links, .footer-social {
+    flex: 1 1 auto;
   }
-  
-  .footer-brand h2 {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
-  }
-  
-  .footer-brand p {
-    font-size: 1rem;
-    line-height: 1.5;
-    color: var(--tx); /* Ensures good contrast with background */
-  }
-  
-  /* Links Section */
-  .footer-links {
-    flex: 1 1 200px;
-  }
-  
-  .footer-links h3 {
-    font-size: 1.2rem;
-    margin-bottom: 15px;
-  }
-  
-  .footer-links ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .footer-links li {
-    margin: 8px 0;
-  }
-  
-  .footer-links a {
-    color: var(--tx); /* Ensures readability */
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-  
-  .footer-links a:hover {
-    color: var(--ac); /* Accent color on hover */
-  }
-  
-  /* Social Media Section */
-  .footer-social {
-    flex: 1 1 200px;
-  }
-  
-  .footer-social h3 {
-    font-size: 1.2rem;
-    margin-bottom: 15px;
-  }
-  
-  .social-icons {
-    display: flex;
-    gap: 15px;
-  }
-  
-  .social-icons a {
-    color: var(--tx); /* White color for social icons */
-    font-size: 1.5rem;
-    transition: color 0.3s ease;
-  }
-  
-  .social-icons a:hover {
-    color: var(--ac); /* Accent color on hover */
-  }
-  
-  /* Footer Bottom */
-  .footer-bottom {
-    text-align: center;
-    margin-top: 20px;
-    border-top: 1px solid #ddd; /* Light border color for a subtle look */
-    padding-top: 10px;
-    font-size: 0.9rem;
-    color: var(--tx); /* Ensures readability */
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .footer-container {
-      flex-direction: column;
-      gap: 30px;
-    }
-  
-    .footer-brand, .footer-links, .footer-social {
-      flex: 1 1 auto;
-    }
-  }
-  
+}

@@ -4,8 +4,8 @@ import "./banner.css";
 const Banner = () => {
   const stats = [
     { value: "10+", label: "Years of Experience" },
-    { value: "200+", label: "Satisfied Clients" },
-    { value: "200+", label: "Projects Completed" },
+    { value: "100+", label: "Satisfied Clients" },
+    { value: "130+", label: "Projects Completed" },
   ];
 
   return (

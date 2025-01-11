@@ -64,3 +64,14 @@
     width: 12px;
     height: 12px;
   }
+
+  .project-section .swiper-pagination span{
+    background-color: var(--ac);
+    width: 9px;
+    height: 9px;
+  }
+
+  .project-section .swiper-pagination span.swiper-pagination-bullet-active{
+    width: 11px;
+    height: 11px;
+  }

@@ -7,25 +7,6 @@
     text-align: center;
   }
   
-  .section-header {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 40px;
-    color: #2c3e50;
-    position: relative;
-    display: inline-block; /* Ensures proper alignment for pseudo-element */
-  }
-  
-  .section-header::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -10px; /* Adjust spacing below the text */
-    width: 50%; /* Half underline */
-    height: 6px; /* Thickness of the underline */
-    background-color: var(--ac); /* Decorative line color */
-    border-radius: 2px; /* Slight rounding for a polished look */
-  }
   
   
   /* Service Grid Styles */
@@ -48,13 +29,13 @@
     transition: transform 0.3s, box-shadow 0.3s;
   }
   
-  .service-card:hover {
-    box-shadow: 0 3px 6px var(--ac);
-  }
+  /* .service-card:hover {
+    box-shadow: 0 0 3px var(--ac);
+  } */
   
   .service-image {
     width: 100%;
-    height: 150px;
+    height: 170px;
     object-fit: cover;
     border-radius: 10px;
     margin-bottom: 20px;
