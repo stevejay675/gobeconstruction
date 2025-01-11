@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <div className='App'><Header /></div>
         {children}
-        <BackToTop/>
+        {/* <BackToTop/> */}
         <Whats />
         <div className="App"><Footer /></div>
       </body>
