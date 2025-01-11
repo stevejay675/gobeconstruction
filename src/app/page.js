@@ -1,3 +1,5 @@
+'use client'
+
 import Banner from "@/components/banner/Banner";
 import HeroSection from "@/components/hero/hero";
 import Map from "@/components/map/map";
@@ -5,8 +7,30 @@ import Projects from "@/components/project/Project";
 import Service from "@/components/services/service";
 import WhyUs from "@/components/whyus/WhyUs";
 import Image from "next/image";
+import { useState, useEffect } from "react";
+import Preloader from "@/components/preloader/preloader";
 
 export default function Home() {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const handleLoad = () => {
+      
+      setIsLoading(false);
+    };
+   
+    if (document.readyState === 'complete') {
+      handleLoad();
+    } else {
+      window.addEventListener('load', handleLoad);
+    }
+
+   
+    return () => {
+      window.removeEventListener('load', handleLoad);
+    };
+  }, []);
+
   const heroData = [
     {
       image: '/images/hero2.jpg',
@@ -39,6 +63,7 @@ export default function Home() {
 
   return (
     <div className='App'>
+      {isLoading && <Preloader />} 
      <HeroSection heroData={heroData}/>
      <Service />
      <WhyUs />
