@@ -1,9 +1,7 @@
-import Footer from '@/components/footer/footer'
 import HeroSection from '@/components/hero/hero'
 import React from 'react'
 import ContactMain from './contact-components/ContactMain'
 import ContactSocials from './contact-components/ContactSocials'
-import Header from '@/components/header/header'
 import Map from '@/components/map/map'
 
 const Contact = () => {
