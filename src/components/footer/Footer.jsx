@@ -26,8 +26,8 @@ const Footer = () => {
         <div className="footer-links">
   <h3 className="sub-header">Contact Us</h3>
   <ul>
-    <li><a href="mailto:info@example.com">gobehroland084@gmail.com</a></li>
-    <li><a href="tel:+1234567890">+237678827843</a></li>
+    <li><a href="mailto:gobehroland084@gmail.com">gobehroland084@gmail.com</a></li>
+    <li><a href="tel:+237678827843">+237678827843</a></li>
     <li>Opposite Molyko stadium</li>
     <li>Working Hours: 9 AM - 5 PM</li>
   </ul>

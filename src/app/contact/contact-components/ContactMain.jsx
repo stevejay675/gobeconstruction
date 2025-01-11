@@ -17,7 +17,7 @@ const ContactMain = () => {
             <FaPhone className='contact-icons' /> +237678827843
           </a>
           <a href="sms:+237678827843">
-            <FaPhone className='contact-icons' /> Send an SMS
+            <FaEnvelope className='contact-icons' /> Send an SMS
           </a>
           <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer">
             <FaFacebook className='contact-icons' /> contact on facebook
