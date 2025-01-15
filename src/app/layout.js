@@ -25,6 +25,7 @@ export default function RootLayout({ children }) {
       <body className={`${poppins.variable}`}>
         <Header />
         {children}
+        <BackToTop />
         <Whats />
         <div className="App"><Footer /></div>
       </body>
