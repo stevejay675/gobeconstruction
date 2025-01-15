@@ -9,7 +9,7 @@ const Banner = () => {
   ];
 
   return (
-    <div className="banner">
+    <section className="banner">
       <img src="/images/banner.webp" alt="banner" className="banner-image" />
       <div className="overlay"></div>
       <div className="banner-content-container">
@@ -20,7 +20,7 @@ const Banner = () => {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

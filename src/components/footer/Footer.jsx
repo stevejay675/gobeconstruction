@@ -1,6 +1,7 @@
 import React from 'react';
 import './footer.css';
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn, FaWhatsapp } from 'react-icons/fa';
+import Link from 'next/link';
 
 const Footer = () => {
   return (
@@ -16,10 +17,10 @@ const Footer = () => {
         <div className="footer-links">
           <h3 className='sub-header'>Quick Links</h3>
           <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/about">About Us</a></li>
-            <li><a href="/contact">Contact</a></li>
-            <li><a href="https://api.whatsapp.com/send/?phone=%2B237678827843&text&type=phone_number&app_absent=0">whatsapp Us</a></li>
+            <li><Link href="/">Home</Link></li>
+            <li><Link href="/about">About Us</Link></li>
+            <li><Link href="/contact">Contact</Link></li>
+            <li><a href="https://api.whatsapp.com/send/?phone=%2B237678827843&text&type=phone_number&app_absent=0" target='_blank'>whatsapp Us</a></li>
           </ul>
         </div>
 
@@ -38,9 +39,9 @@ const Footer = () => {
         <div className="footer-social">
           <h3 className='sub-header'>Follow Us</h3>
           <div className="social-icons">
-            <a href="https://www.facebook.com/profile.php?id=100069844161030" aria-label="Facebook"><FaFacebookF /></a>
-            <a href="https://api.whatsapp.com/send/?phone=%2B237678827843&text&type=phone_number&app_absent=0" aria-label="whatsapp"><FaWhatsapp /></a>
-            <a href="#" aria-label="Instagram"><FaInstagram /></a>
+            <a href="https://www.facebook.com/profile.php?id=100069844161030" aria-label="Facebook" target='_blank'><FaFacebookF /></a>
+            <a href="https://api.whatsapp.com/send/?phone=%2B237678827843&text&type=phone_number&app_absent=0" target='_blank' aria-label="whatsapp"><FaWhatsapp /></a>
+            <a href="instagram.com" aria-label="Instagram" target='_blank'><FaInstagram /></a>
           </div>
         </div>
       </div>

@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import './header.css';
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import Sidebar from '../sidebar/Sidebar';
+import Link from 'next/link';
 
 const Navbar = () => {
   
@@ -24,19 +25,19 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <a href='/' className="navbar-logo">
+      <Link href='/' className="navbar-logo">
         <img src="/images/logo.jpg" alt="Logo" />
-      </a>
+      </Link>
 
       <ul className="navbar-links">
-        <li className={` ${isActive("/") ? "active" : ""}`}><a href="/">Home</a></li>
-        <li className={` ${isActive("/about") ? "active" : ""}`}><a href="/about">About Us</a></li>
+        <li className={` ${isActive("/") ? "active" : ""}`}><Link href="/">Home</Link></li>
+        <li className={` ${isActive("/about") ? "active" : ""}`}><Link href="/about">About Us</Link></li>
         {/* <li><a href="#services">Services</a></li> */}
         {/* <li><a href="#projects">Projects</a></li> */}
-        <li className={` ${isActive("/contact") ? "active" : ""}`}><a href="/contact">Contact</a></li>
+        <li className={` ${isActive("/contact") ? "active" : ""}`}><Link href="/contact">Contact</Link></li>
 
         <div className="navbar-cta">
-          <a href="/contact" className="btn-cta">Send Message</a>
+          <Link href="/contact" className="btn-cta">Send Message</Link>
         </div>
       </ul>
 

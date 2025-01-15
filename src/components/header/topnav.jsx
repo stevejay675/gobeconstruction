@@ -11,9 +11,9 @@ const TopNav = () => {
       </div>
       <div className="top-nav-right">
         <span><FaEnvelope /> +237678827843</span>
-        <a href="https://www.facebook.com/profile.php?id=100069844161030"><FaFacebookF /></a>
-        <a href="https://api.whatsapp.com/send/?phone=%2B237678827843&text&type=phone_number&app_absent=0"><FaWhatsapp /> </a>
-        <a href="#"><FaInstagram /></a>
+        <a href="https://www.facebook.com/profile.php?id=100069844161030" target='_blank'><FaFacebookF /></a>
+        <a href="https://api.whatsapp.com/send/?phone=%2B237678827843&text&type=phone_number&app_absent=0" target='_blank'><FaWhatsapp /> </a>
+        <a href="instagram.com" target='_blank'><FaInstagram /></a>
       </div>
     </div>
   );
