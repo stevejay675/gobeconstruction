@@ -11,6 +11,16 @@ const Navbar = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [currentPath, setCurrentPath] = useState("");
 
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 80);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   useEffect(() => {
     if (typeof window !== "undefined") {
       setCurrentPath(window.location.pathname);
@@ -24,7 +34,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="navbar">
+    <nav className= {`navbar ${isScrolled ? 'scrolled' : ''}`}>
       <Link href='/' className="navbar-logo">
         <img src="/images/logo.jpg" alt="Logo" />
       </Link>

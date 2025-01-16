@@ -13,6 +13,9 @@
     max-width: 1440px;
   margin: 0 auto;
   }
+
+  
+  
   
   /* Top Navigation */
   .top-nav {
@@ -90,7 +93,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 20px;
+    padding: 10px 20px;
+  }
+
+  .navbar.scrolled {
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    width: 100%;
   }
   
   .navbar-logo img {
